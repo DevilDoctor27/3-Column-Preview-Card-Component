@@ -1,0 +1,108 @@
+body {
+    font-size: 15px;
+    /* font-family: 'Big Shoulders Display', cursive; */
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.container {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    max-width: 980px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.card__item {
+    padding: 40px;
+}
+
+.card__item.sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+.card__item.suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+.card__item.luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__title {
+    font-family: 'Big Shoulders Display', cursive;
+    margin-top: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    color:hsl(0, 0%, 95%);
+    text-transform: uppercase;
+}
+
+.card__text {
+    margin-top: 25px;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card__btn {
+    margin-top: 70px;
+    padding: 10px 20px;
+    border: 2px solid hsl(0, 0%, 95%);
+    border-radius: 22px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color .2s linear, background-color .2s linear;
+}
+
+.card__btn.sedans {
+    color:hsl(31, 77%, 52%);
+}
+.card__btn.suvs {
+    color: hsl(184, 100%, 22%);
+}
+.card__btn.luxury {
+    color:hsl(179, 100%, 13%);
+}
+
+.card__btn:hover {
+    color:hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+
+@media (max-width: 801px) {
+
+    .container {
+        padding: 0;
+    }
+    .cards {
+        flex-direction: column;
+        transform: scale(.8);
+    }
+
+}
+
+@media (max-width: 601px) {
+
+    .cards {
+        transform: scale(.75);
+    }
+
+}
